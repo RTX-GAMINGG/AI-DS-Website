@@ -97,5 +97,5 @@
   }
 
   #bkg {
-  background: url('./video/VIDEO.gif') center center/cover no-repeat; /* Fallback background image */
+  background: url('./img/clg.jpg') center center/cover no-repeat; /* Fallback background image */
 }
