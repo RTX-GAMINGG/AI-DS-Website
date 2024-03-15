@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About AI & DS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body, h1 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      background-image: url('./img/aboutwall.png');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .countdown {
+      font-size: 36px;
+    }
+    .description {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    #changingText {
+        font-size: 16px;
+        height: 72px;
+        line-height: 1; 
+        margin-bottom: 20px; 
+        overflow: hidden;
+      }
+      
+    .btn {
+      padding: 10px 20px;
+      background-color: #008CBA;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #00506b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-margin-9 w3-xlarge">
+    <img src="./img/flogo.png" alt="Logo" width="168" height="78">
+  </div>
+  
+  
+  
+  <div class="content">
+    <h1 id="changingText" class="w3-jumbo w3-animate-top"></h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center countdown">   
+      <span id="typedText">
+        Welcome to the world of Artificial Intelligence (AI) and Data Science! Our BTech program in AI & Data Science is designed to equip students with the skills and knowledge necessary to excel in this rapidly evolving field.
+        <br><br>In this comprehensive course, students will delve into the core concepts of AI, including machine learning, neural networks, natural language processing, and computer vision. Additionally, they will explore various techniques and tools used in Data Science, such as data analysis, statistical modeling, and predictive analytics.
+        Through a combination of theoretical study and hands-on projects, students will develop a deep understanding of AI and Data Science principles and methodologies. They will learn to apply these skills to solve real-world problems across a wide range of industries, including finance, healthcare, marketing, and more.
+        
+      </span>
+    </p>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    SRI INDU COLLEGE OF ENGINEERING
+  </div>
+</div>
+
+<script>
+const changingText = document.getElementById("changingText");
+const changingTextSentences = [
+  "FUTURE OF AI!",
+  "NO MORE HUSTLE.",
+  "Fast as Light!."
+];
+
+let currentTextIndex = 0;
+let charIndex = 0;
+let isTypingBackwards = false;
+
+function updateChangingText() {
+  const sentence = changingTextSentences[currentTextIndex];
+
+  if (isTypingBackwards) {
+    if (charIndex >= 0) {
+      changingText.textContent = sentence.slice(0, charIndex);
+      charIndex--;
+    } else {
+      isTypingBackwards = false;
+      currentTextIndex = (currentTextIndex + 1) % changingTextSentences.length;
+    }
+  } else {
+    if (charIndex < sentence.length) {
+      changingText.textContent = sentence.slice(0, charIndex + 1);
+      charIndex++;
+    } else {
+      isTypingBackwards = true;
+    }
+  }
+
+  setTimeout(updateChangingText, 100); 
+}
+
+updateChangingText();
+
+</script>
+
+</body>
+</html>
