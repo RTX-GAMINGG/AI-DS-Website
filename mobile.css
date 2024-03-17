@@ -19,9 +19,34 @@ input, textarea, * {
     #usefull{
       margin-left: 10px;
     }
-   ::-webkit-scrollbar {
-      width: 0px; 
+    ::-webkit-scrollbar {
+      width: 0px; /* Set the width of the scrollbar */
     }
+    #lanheader {
+      font-size: 20px; 
+    }
+    
+    #lanheaderlead {
+      font-size: 15px;
+    }
+    .landing-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      text-align: center;
+      color: white; /* Adjust text color to ensure readability */
+      padding: 10px;
+    }
+    .video-container {
+   
+      height: 50vh;
+  
+    }
+  #mobaibox{
+    margin-bottom: 20px;
+  }
   
 }
 @media only screen and (min-width: 456px) {
