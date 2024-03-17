@@ -1,4 +1,9 @@
-/* MOBILE  */
+input, textarea, * {
+  caret-color: transparent;
+}
+* {
+  user-select: none;
+}
 @media only screen and (max-width: 455px) {
     /* For mobile phones: */
     
