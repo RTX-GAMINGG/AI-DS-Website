@@ -132,5 +132,5 @@
   }
 
   #bkg {
-  background: url('./video/clg.jpg') center center/cover no-repeat; /* Fallback background image */
+  background: url('./img/clg.jpg') center center/cover no-repeat; /* Fallback background image */
 }
