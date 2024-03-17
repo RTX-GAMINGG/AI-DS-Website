@@ -11,10 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Redirect to about.html when the button is clicked
     window.location.href = this.getAttribute('href');
   });
-window.addEventListener('scroll', function() {
-  const scrolled = window.scrollY / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-  document.getElementById("progress-bar").getElementsByTagName('div')[0].style.width = scrolled * 100 + "%";
-})
+
 
 const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
@@ -27,7 +24,6 @@ const menu_items = document.querySelectorAll('nav .mainMenu li a');
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 
-// close menu when you click on a menu item 
 menu_items.forEach(item => {
     item.addEventListener('click',function(){
         close();
@@ -46,8 +42,8 @@ function toggleMenu() {
   menu.classList.toggle('open');
 }
 
-// Add an event listener to the closeMenu button
+
 document.querySelector('nav .mainMenu .closeMenu').addEventListener('click', function() {
-  // Hide the menu when the close button is clicked
+
   toggleMenu();
 });
