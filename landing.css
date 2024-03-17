@@ -206,7 +206,7 @@ transition:800ms ease all;
 /* Define custom scrollbar styles */
 /* Define custom scrollbar styles */
 ::-webkit-scrollbar {
-  width: 5px; /* Set the width of the scrollbar */
+  width: 4px; /* Set the width of the scrollbar */
 }
 
 /* Track */
