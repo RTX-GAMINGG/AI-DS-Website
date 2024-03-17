@@ -4,6 +4,12 @@
     padding: 0px;
      font-family: "Poppins",sans-serif;  
   }
+  input, textarea, * {
+    caret-color: transparent;
+  }
+  * {
+  user-select: none;
+}
   body {
     font-family: Arial, sans-serif;
   }
@@ -130,7 +136,15 @@
     }
   
   }
-
+  #preload-background {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background: url('./video/main1.gif') center center/cover no-repeat;
+  }
   #bkg {
-  background: url('./img/clg.jpg') center center/cover no-repeat; /* Fallback background image */
+  background: url('./video/main1.gif') center center/cover no-repeat; /* Fallback background image */ 
 }
