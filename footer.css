@@ -1,6 +1,12 @@
 *{
     font-family: "Poppins",sans-serif;
 }
+input, textarea, * {
+  caret-color: transparent;
+}
+* {
+  user-select: none;
+}
 ul {
     margin: 0px;
     padding: 0px;
