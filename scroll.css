@@ -1,0 +1,49 @@
+input, textarea, * {
+  caret-color: transparent;
+}
+* {
+  user-select: none;
+}
+.breakingnews {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+.breakingnews article {
+  caret-color: transparent;
+  pointer-events: none;
+  display: inline-block; 
+  animation: marquee 15s linear infinite; 
+  animation-fill-mode: forwards; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .breakingnews {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .breakingnews article {
+    display: inline-block; 
+    animation-fill-mode: forwards; 
+  }
+  .breakingnews article {
+    animation-duration: 17s;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.breakingnews:hover article {
+  animation-play-state: paused;
+}
+
