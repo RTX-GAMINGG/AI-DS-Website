@@ -22,12 +22,12 @@ input, textarea, * {
     ::-webkit-scrollbar {
       width: 0px; /* Set the width of the scrollbar */
     }
-    #lanheader {
-      font-size: 20px; 
+     #lanheader {
+      font-size: 13px; 
     }
     
     #lanheaderlead {
-      font-size: 15px;
+      font-size: 6px;
     }
     .landing-content {
       position: absolute;
