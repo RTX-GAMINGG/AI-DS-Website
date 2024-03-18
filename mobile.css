@@ -20,9 +20,9 @@ input, textarea, * {
       margin-left: 10px;
     }
     ::-webkit-scrollbar {
-      width: 0px; /* Set the width of the scrollbar */
+      width: 0px; 
     }
-     #lanheader {
+    #lanheader {
       font-size: 13px; 
     }
     
@@ -46,6 +46,14 @@ input, textarea, * {
     }
   #mobaibox{
     margin-bottom: 20px;
+  }
+  #chaimg{
+    width: 385px;
+    height: 400px;
+  }
+  #secimg{
+    width: 385px;
+    height: 400px;
   }
   
 }
