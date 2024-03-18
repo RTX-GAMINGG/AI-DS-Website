@@ -16,7 +16,7 @@ input, textarea, * {
   caret-color: transparent;
   pointer-events: none;
   display: inline-block; 
-  animation: marquee 15s linear infinite; 
+  animation: marquee 20s linear infinite; 
   animation-fill-mode: forwards; 
 }
 
@@ -43,7 +43,5 @@ input, textarea, * {
   100% { transform: translateX(-100%); }
 }
 
-.breakingnews:hover article {
-  animation-play-state: paused;
-}
+
 
